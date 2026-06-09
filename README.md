@@ -1,45 +1,21 @@
-# FIFA World Cup 2026 Prediction Agent
+# WC2026 Betting Value Scanner
 
-TypeScript agent that predicts FIFA World Cup 2026 match outcomes, group standings, and tournament winners using an ensemble of Elo, Poisson, and form-based models.
+FIFA World Cup 2026 betting scanner — surfaces +EV match outcomes by comparing ensemble model probabilities against mock market odds with Kelly stake sizing.
 
 ## Features
 
-- **Match predictions** — win/draw/loss probabilities and expected goals
-- **Group standings** — simulated points tables from predicted results
-- **Tournament simulation** — projected champion and semifinalists
-- **Value bet detection** — compare model vs market odds with Kelly sizing
-- **Agent tools** — extensible tool-based prediction orchestration
+- Value bet detection across all group fixtures
+- Kelly criterion optimal stake sizing
+- Bookmaker margin / overround analysis
+- Bankroll manager with unit-based staking
+- Edge report formatting for quick review
 
-## Quick Start
+## Usage
 
 ```bash
 npm install
 npm run scan -- predict A1
-npm run scan -- standings
-npm run scan -- tournament
 npm run scan -- value-bets
+npm run scan -- standings
 npm test
-```
-
-## Models
-
-| Model | Weight | Description |
-|-------|--------|-------------|
-| Elo | 35% | Rating-based win probability with home advantage |
-| Poisson | 30% | Goal distribution from attack/defense strength |
-| Form | 20% | Recent results momentum score |
-| Squad | 15% | Squad market value strength (optional) |
-
-## Project Structure
-
-```
-src/
-├── agent/          # Value scanner and tools
-├── cli/            # Command-line interface
-├── data/           # Teams, groups, venues, fixtures
-├── models/         # Elo, Poisson, form, ensemble
-├── odds/           # Market odds and value bets
-├── predictions/    # Match and tournament predictors
-├── types/          # TypeScript interfaces
-└── utils/          # Kelly, EV, logging, formatting
 ```
