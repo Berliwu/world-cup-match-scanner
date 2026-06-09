@@ -1,0 +1,5 @@
+[
+  {"id":"A1","home":"usa","away":"sen","homeOdds":-150,"drawOdds":280,"awayOdds":400},
+  {"id":"B1","home":"arg","away":"aus","homeOdds":-200,"drawOdds":320,"awayOdds":550},
+  {"id":"C1","home":"fra","away":"can","homeOdds":-180,"drawOdds":300,"awayOdds":480}
+]
