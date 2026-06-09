@@ -10,7 +10,7 @@ export class WcProbabilityModel {
   price(fixture: MarketFixture): ModelPrice {
     const home = nationById(fixture.home)!;
     const away = nationById(fixture.away)!;
-    const diff = home.elo - away.elo;
+    const diff = home.eloRating - away.eloRating;
     const homeWin = 1 / (1 + Math.exp(-diff / 200));
     const awayWin = 1 - homeWin;
     const draw = 0.26;
@@ -19,8 +19,8 @@ export class WcProbabilityModel {
       home: homeWin * scale,
       draw,
       away: awayWin * scale,
-      xgHome: 1.2 + home.elo / 3000,
-      xgAway: 1.2 + away.elo / 3000,
+      xgHome: 1.2 + home.eloRating / 3000,
+      xgAway: 1.2 + away.eloRating / 3000,
     };
   }
 
