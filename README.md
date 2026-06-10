@@ -1,3 +1,5 @@
+<img width="600" height="336" alt="download" src="https://github.com/user-attachments/assets/38b30288-9860-4678-aa04-85a2e2157549" />
+
 # WC2026 Betting Value Scanner
 
 Class-based market scanner for FIFA World Cup 2026 — compares model-implied probabilities against American odds to surface +EV edges with Kelly-style portfolio sizing.
