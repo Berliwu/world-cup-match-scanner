@@ -2,7 +2,8 @@ node_modules/
 dist-lib/
 coverage/
 .env
-.env.*
+.env.local
+.env.*.local
 .DS_Store
 .idea/
 package-lock.json

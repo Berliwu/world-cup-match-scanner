@@ -1,0 +1,7 @@
+date,home_team,away_team,target__home_team__full_time_goals,target__away_team__full_time_goals
+2020-01-01,Arsenal,Chelsea,2,1
+2020-01-08,Chelsea,Arsenal,1,1
+2020-01-15,Arsenal,Liverpool,0,2
+2020-01-22,Liverpool,Arsenal,3,1
+2020-01-29,Chelsea,Liverpool,2,2
+2020-02-05,Liverpool,Chelsea,1,0
